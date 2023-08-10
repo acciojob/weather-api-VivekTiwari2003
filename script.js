@@ -4,7 +4,7 @@ const getWeatherBtn = document.getElementById("getWeatherBtn");
 const weatherDataDiv = document.getElementById("weatherData");
 
 getWeatherBtn.addEventListener("click", () => {
-    const apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=London&appid=YOUR_API_KEY_HERE";
+    const apiUrl = "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid={2907475f6f62b8b4828733a3a1425be1}";
     
     fetch(apiUrl)
         .then(response => response.json())
